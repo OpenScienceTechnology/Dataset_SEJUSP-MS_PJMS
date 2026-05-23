@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-================================================================================
+=========================================================================================
   MONITOR DA VIOLÊNCIA CONTRA A MULHER - SEJUSP/MS e PJMS
   Conversor XLS (HTML) → CSV
   🔗 Fonte: https://monitorviolenciacontramulher.sejusp.ms.gov.br/
-================================================================================
+=========================================================================================
   Descrição:
       Converte arquivos XLS do Monitor da Violência contra a Mulher
       (que são tabelas HTML com extensão .xls) para CSV (UTF-8, separador ";").
@@ -17,17 +17,20 @@
 
   Dependências:
       pip install pandas texttable lxml html5lib
-================================================================================
+=========================================================================================
 🔍 Descoberta Técnica Importante:
-Os arquivos .xls do "MONITOR DA VIOLÊNCIA CONTRA A MULHER - SEJUSP/MS e PJMS" são na verdade tabelas HTML com extensão .xls (prática comum em portais gov. brasileiros), encoding latin-1. O script lida com isso automaticamente, tentando múltiplos encodings em cascata, com fallback para BeautifulSoup se necessário.
+Os arquivos .xls do "MONITOR DA VIOLÊNCIA CONTRA A MULHER - SEJUSP/MS e PJMS" 
+são na verdade tabelas HTML com extensão .xls (prática comum em portais gov. 
+brasileiros), encoding latin-1. O script lida com isso automaticamente, tentando 
+múltiplos encodings em cascata, com fallback para BeautifulSoup se necessário.
 📌 Os arquivos são tabelas HTML com extensão .xls, codificadas em latin-1 (ISO-8859-1).
-================================================================================
+=========================================================================================
   Script  : Monitor Violência MS - Script de Conversão
   Autor   : VIANA
   Data    : 2026-05-23
   Versão  : 1.0.0
   Nota    : 🧾 Script de conversão de arquivos XLS para CSV
-================================================================================
+=========================================================================================
 """
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -98,9 +101,9 @@ TABLE_WIDTH = 120
 # Banner do sistema
 BANNER = r"""
 ╔══════════════════════════════════════════════════════════════════════════════════╗
-║       MONITOR DA VIOLÊNCIA CONTRA A MULHER — SEJUSP/MS e PJMS                  ║
-║       Conversor XLS (HTML) → CSV                                                ║
-║       Fonte: https://monitorviolenciacontramulher.sejusp.ms.gov.br/             ║
+║       MONITOR DA VIOLÊNCIA CONTRA A MULHER — SEJUSP/MS e PJMS                    ║
+║       Conversor XLS (HTML) → CSV                                                 ║
+║       Fonte: https://monitorviolenciacontramulher.sejusp.ms.gov.br/              ║
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 """
 
