@@ -1,0 +1,337 @@
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  MONITOR DA VIOLÊNCIA CONTRA A MULHER — SEJUSP/MS e PJMS
+  RELATÓRIO DE CONVERSÃO XLS → CSV
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  Fonte     : https://monitorviolenciacontramulher.sejusp.ms.gov.br/
+  Gerado em : 23/05/2026 às 11:14:27
+  Diretório : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS
+  Sistema   : Windows 10 | Python 3.13.13
+  Duração   : 10.82s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  1. RESUMO EXECUTIVO
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
++-----------------------------+---------+
+|           MÉTRICA           |  VALOR  |
++=============================+=========+
+| Arquivos XLS encontrados    |       6 |
+| Conversões com sucesso      |       6 |
+| Conversões com erro         |       0 |
+| Total de registros (linhas) |  91.469 |
+| Total de colunas (soma)     |      88 |
+| Volume total dos CSVs       | 16.1 MB |
+| Tempo total de execução     |  10.82s |
++-----------------------------+---------+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  2. RESULTADOS POR ARQUIVO
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
++--------------------------------+----------------------------------+----------+----------+--------------+-----------+------------+-----------+
+|          ARQUIVO XLS           |            CSV GERADO            |  LINHAS  | COLUNAS  | TAMANHO XLS  |  TAM CSV  |  ENCODING  |  STATUS   |
++================================+==================================+==========+==========+==============+===========+============+===========+
+| ATENDIMENTOS_EMERGENCIA_MS_202 | atendimentos_emergencia.csv      |   41.548 |        8 |       7.6 MB |    4.6 MB | latin-1    | OK        |
+| MEDIDAS_PROTETIVAS_URGENCIA_MP | medidas_protetivas_urgencia.csv  |      800 |       16 |     291.5 KB |  186.8 KB | latin-1    | OK        |
+| MULHERES_VITIMAS_HOMICIDIOS_MS | mulheres_vitimas_homicidios.csv  |    1.715 |       16 |     723.4 KB |  498.0 KB | latin-1    | OK        |
+| VITIMAS_ESTUPRO_MS_2026-05-18. | vitimas_estupro.csv              |   43.509 |       16 |      15.4 MB |    9.9 MB | latin-1    | OK        |
+| VITIMAS_FEMINICIDIOS_MS_2026-0 | vitimas_feminicidios.csv         |      997 |       16 |     412.2 KB |  281.5 KB | latin-1    | OK        |
+| VITIMAS_VIOLENCIA_DOMESTICA_MS | vitimas_violencia_domestica.csv  |    2.900 |       16 |       1.0 MB |  670.0 KB | latin-1    | OK        |
++--------------------------------+----------------------------------+----------+----------+--------------+-----------+------------+-----------+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  3. DETALHAMENTO POR DATASET
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1/6] ATENDIMENTOS_EMERGENCIA_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\ATENDIMENTOS_EMERGENCIA_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\atendimentos_emergencia.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 3.55s
+  Tamanho XLS  : 7.6 MB
+  Tamanho CSV  : 4.6 MB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | DATA                             | object     |        0 |      41543 | '03/02/2023 11:40:2'(2) | '11/09/2022  |
+|    2 | MÊS                              | object     |        0 |         12 | 'SETEMBRO'(4537) | 'OUTUBRO'(4407) | ' |
+|    3 | ANO                              | int64      |        — |         11 | '2022'(8594) | '2023'(8292) | '2021'(5 |
+|    4 | DIA DA SEMANA                    | object     |        0 |          7 | 'DOMINGO'(9828) | 'SÁBADO'(8572) | 'SE |
+|    5 | FATO                             | object     |        0 |         14 | 'AMEACA (VIOLENCIA '(12018) | 'DESCUMP |
+|    6 | MUNICÍPIO                        | object     |        0 |         91 | 'CAMPO GRANDE'(13410) | 'DOURADOS'(672 |
+|    7 | BAIRRO                           | object     |     6790 |       1453 | ''(6790) | 'CENTRO'(2982) | 'JARDIM NO |
+|    8 | TIPO DE LOCAL                    | object     |        0 |         87 | 'RESIDENCIA'(29179) | 'VIA URBANA'(817 |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 41.548
+    Registros duplicad: 1
+    Taxa duplicação   : 0.00%
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [2/6] MEDIDAS_PROTETIVAS_URGENCIA_MPU_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\MEDIDAS_PROTETIVAS_URGENCIA_MPU_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\medidas_protetivas_urgencia.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 0.11s
+  Tamanho XLS  : 291.5 KB
+  Tamanho CSV  : 186.8 KB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | Nº BO                            | object     |        0 |        247 | '1043/2026 - 1DEAM'(11) | '43/2026 - D |
+|    2 | FATO                             | object     |        0 |         17 | 'AMEACA (VIOLENCIA '(265) | 'INJURIA ( |
+|    3 | FATO AGRUPADO                    | object     |        0 |         15 | 'VIOLENCIA DOMESTIC'(265) | 'VIOLENCIA |
+|    4 | BAIRRO DO FATO                   | object     |        0 |        169 | 'Centro'(85) | 'CENTRO'(29) | 'Caicara |
+|    5 | UF DO FATO                       | object     |        0 |          1 | 'MS'(800)                              |
+|    6 | MUNICÍPIO DO FATO                | object     |        0 |         52 | 'Campo Grande'(360) | 'Dourados'(53) | |
+|    7 | CÓDIGO IBGE                      | int64      |        — |         50 | '5002704'(368) | '5003702'(53) | '5003 |
+|    8 | ANO DO FATO                      | int64      |        — |          1 | '2026'(800)                            |
+|    9 | DATA DO FATO                     | object     |        0 |         10 | '08/02/2026'(140) | '07/02/2026'(125)  |
+|   10 | HORA DO FATO                     | object     |        0 |        149 | '22:00:00'(41) | '08:00:00'(28) | '19: |
+|   11 | ENVOLVIMENTO                     | object     |        0 |          2 | 'VÍTIMA'(416) | 'AUTOR'(384)           |
+|   12 | SEXO                             | object     |        0 |          3 | 'FEMININO'(442) | 'MASCULINO'(357) | ' |
+|   13 | NACIONALIDADE                    | object     |        0 |          4 | 'BRASILEIRO(A)'(745) | 'N/I'(37) | 'ES |
+|   14 | ESCOLARIDADE                     | object     |        0 |         10 | 'FUNDAMENTAL INCOMP'(231) | 'MEDIO COM |
+|   15 | COR/RAÇA                         | object     |        0 |          6 | 'PARDA'(469) | 'BRANCA'(199) | 'N/I'(7 |
+|   16 | IDADE NO FATO                    | float64    |        — |         70 | '31.0'(45) | '30.0'(41) | '24.0'(38)   |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 800
+    Registros duplicad: 1
+    Taxa duplicação   : 0.12%
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [3/6] MULHERES_VITIMAS_HOMICIDIOS_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\MULHERES_VITIMAS_HOMICIDIOS_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\mulheres_vitimas_homicidios.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 0.22s
+  Tamanho XLS  : 723.4 KB
+  Tamanho CSV  : 498.0 KB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | Nº BO                            | object     |        0 |        399 | '13717/2016 - DEPAC'(30) | '1211/2016  |
+|    2 | FATO                             | object     |        0 |         66 | 'HOMICIDIO SIMPLES'(517) | 'HOMICIDIO  |
+|    3 | FATO AGRUPADO                    | object     |        0 |         33 | 'HOMICIDIO DOLOSO, '(1164) | 'HOMICIDI |
+|    4 | BAIRRO DO FATO                   | object     |      497 |        150 | ''(497) | 'CENTRO'(289) | 'ZONA RURAL' |
+|    5 | UF DO FATO                       | object     |        0 |          1 | 'MS'(1715)                             |
+|    6 | MUNICÍPIO DO FATO                | object     |        0 |         61 | 'CAMPO GRANDE'(459) | 'DOURADOS'(184)  |
+|    7 | CÓDIGO IBGE                      | int64      |        — |         61 | '5002704'(459) | '5003702'(184) | '500 |
+|    8 | ANO DO FATO                      | int64      |        — |         11 | '2016'(451) | '2017'(325) | '2018'(181 |
+|    9 | DATA DO FATO                     | object     |        0 |        374 | '31/12/2016'(35) | '02/09/2016'(30) |  |
+|   10 | HORA DO FATO                     | object     |        0 |        169 | '22:00:00'(67) | '20:00:00'(59) | '08: |
+|   11 | ENVOLVIMENTO                     | object     |        0 |          2 | 'VÍTIMA'(926) | 'AUTOR'(789)           |
+|   12 | SEXO                             | object     |      480 |          4 | 'MASCULINO'(713) | 'FEMININO'(520) | ' |
+|   13 | NACIONALIDADE                    | object     |      480 |          5 | 'BRASILEIRO(A)'(1182) | ''(480) | 'N/I |
+|   14 | ESCOLARIDADE                     | object     |      480 |         10 | ''(480) | 'FUNDAMENTAL INCOMP'(333) |  |
+|   15 | COR/RAÇA                         | object     |      480 |          7 | 'PARDA'(598) | ''(480) | 'N/I'(321)    |
+|   16 | IDADE NO FATO                    | float64    |        — |         80 | '32.0'(58) | '27.0'(45) | '23.0'(40)   |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 1.715
+    Registros duplicad: 366
+    Taxa duplicação   : 21.34%
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [4/6] VITIMAS_ESTUPRO_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\VITIMAS_ESTUPRO_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\vitimas_estupro.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 5.42s
+  Tamanho XLS  : 15.4 MB
+  Tamanho CSV  : 9.9 MB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | Nº BO                            | object     |        0 |      20221 | '411/2018 - 1DP-JAR'(44) | '2625/2016  |
+|    2 | FATO                             | object     |        0 |        145 | 'ESTUPRO DE VULNERA'(27418) | 'ESTUPRO |
+|    3 | FATO AGRUPADO                    | object     |        0 |         67 | 'ESTUPRO, PEDOFILIA'(30547) | 'ESTUPRO |
+|    4 | BAIRRO DO FATO                   | object     |    13237 |       1260 | ''(13237) | 'CENTRO'(5116) | 'ZONA RUR |
+|    5 | UF DO FATO                       | object     |        0 |          1 | 'MS'(43509)                            |
+|    6 | MUNICÍPIO DO FATO                | object     |        0 |         79 | 'CAMPO GRANDE'(14037) | 'DOURADOS'(355 |
+|    7 | CÓDIGO IBGE                      | int64      |        — |         79 | '5002704'(14037) | '5003702'(3553) | ' |
+|    8 | ANO DO FATO                      | int64      |        — |         11 | '2017'(5079) | '2023'(4876) | '2016'(4 |
+|    9 | DATA DO FATO                     | object     |        0 |       3640 | '01/01/2018'(404) | '01/01/2017'(388)  |
+|   10 | HORA DO FATO                     | object     |        0 |        810 | '08:00:00'(7926) | '00:00:00'(2201) |  |
+|   11 | ENVOLVIMENTO                     | object     |        0 |          2 | 'VÍTIMA'(26701) | 'AUTOR'(16808)       |
+|   12 | SEXO                             | object     |     2129 |          4 | 'FEMININO'(25325) | 'MASCULINO'(15824) |
+|   13 | NACIONALIDADE                    | object     |     2129 |          5 | 'BRASILEIRO(A)'(39655) | ''(2129) | 'N |
+|   14 | ESCOLARIDADE                     | object     |     2129 |         13 | 'FUNDAMENTAL INCOMP'(13098) | 'N/I'(12 |
+|   15 | COR/RAÇA                         | object     |     2129 |          7 | 'N/I'(16827) | 'PARDA'(15293) | 'BRANC |
+|   16 | IDADE NO FATO                    | float64    |        — |        105 | '13.0'(2845) | '12.0'(2379) | '11.0'(1 |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 43.509
+    Registros duplicad: 1.498
+    Taxa duplicação   : 3.44%
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [5/6] VITIMAS_FEMINICIDIOS_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\VITIMAS_FEMINICIDIOS_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\vitimas_feminicidios.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 0.14s
+  Tamanho XLS  : 412.2 KB
+  Tamanho CSV  : 281.5 KB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | Nº BO                            | object     |        0 |        342 | '3297/2021 - DEPAC-'(20) | '3874/2016  |
+|    2 | FATO                             | object     |        0 |         43 | 'FEMINICIDIO, VIOLE'(335) | 'FEMINICID |
+|    3 | FATO AGRUPADO                    | object     |        4 |         26 | 'FEMINICIDIO, CRIME'(378) | 'VIOLENCIA |
+|    4 | BAIRRO DO FATO                   | object     |      259 |        157 | ''(259) | 'CENTRO'(145) | 'ZONA RURAL' |
+|    5 | UF DO FATO                       | object     |        0 |          1 | 'MS'(997)                              |
+|    6 | MUNICÍPIO DO FATO                | object     |        0 |         67 | 'CAMPO GRANDE'(235) | 'DOURADOS'(86) | |
+|    7 | CÓDIGO IBGE                      | int64      |        — |         67 | '5002704'(235) | '5003702'(86) | '5008 |
+|    8 | ANO DO FATO                      | int64      |        — |         11 | '2018'(127) | '2022'(118) | '2020'(108 |
+|    9 | DATA DO FATO                     | object     |        0 |        325 | '09/08/2021'(22) | '17/12/2016'(18) |  |
+|   10 | HORA DO FATO                     | object     |        0 |        157 | '20:00:00'(33) | '00:00:00'(31) | '18: |
+|   11 | ENVOLVIMENTO                     | object     |        0 |          2 | 'VÍTIMA'(510) | 'AUTOR'(487)           |
+|   12 | SEXO                             | object     |       82 |          3 | 'MASCULINO'(481) | 'FEMININO'(434) | ' |
+|   13 | NACIONALIDADE                    | object     |       82 |          5 | 'BRASILEIRO(A)'(887) | ''(82) | 'ESTRA |
+|   14 | ESCOLARIDADE                     | object     |       82 |         11 | 'FUNDAMENTAL INCOMP'(289) | 'N/I'(201) |
+|   15 | COR/RAÇA                         | object     |       82 |          7 | 'PARDA'(483) | 'N/I'(212) | 'BRANCA'(1 |
+|   16 | IDADE NO FATO                    | float64    |        — |         75 | '35.0'(35) | '42.0'(29) | '32.0'(26)   |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 997
+    Registros duplicad: 29
+    Taxa duplicação   : 2.91%
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [6/6] VITIMAS_VIOLENCIA_DOMESTICA_MS_2026-05-18.xls
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Status       : CONVERSÃO CONCLUÍDA COM SUCESSO
+  XLS (entrada): c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\VITIMAS_VIOLENCIA_DOMESTICA_MS_2026-05-18.xls
+  CSV (saída)  : c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS\vitimas_violencia_domestica.csv
+  Encoding XLS : latin-1
+  Encoding CSV : utf-8-sig (separador: ';')
+  Tempo leitura: 0.38s
+  Tamanho XLS  : 1.0 MB
+  Tamanho CSV  : 670.0 KB
+
+  COLUNAS DO DATASET:
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+|  #   |              COLUNA              |    TIPO    |  NULOS/  |   ÚNICOS   |             TOP-3 VALORES              |
+|      |                                  |            |  VAZIOS  |            |                                        |
++======+==================================+============+==========+============+========================================+
+|    1 | Nº BO                            | object     |        0 |        924 | '818/2026 - 1DEAM'(12) | '1043/2026 -  |
+|    2 | FATO                             | object     |        0 |         23 | 'AMEACA (VIOLENCIA '(922) | 'INJURIA ( |
+|    3 | FATO AGRUPADO                    | object     |        0 |         18 | 'VIOLENCIA DOMESTIC'(922) | 'VIOLENCIA |
+|    4 | BAIRRO DO FATO                   | object     |      453 |        363 | ''(453) | 'CENTRO'(401) | 'NOVA LIMA'( |
+|    5 | UF DO FATO                       | object     |        0 |          1 | 'MS'(2900)                             |
+|    6 | MUNICÍPIO DO FATO                | object     |        0 |         75 | 'CAMPO GRANDE'(1084) | 'DOURADOS'(215) |
+|    7 | CÓDIGO IBGE                      | int64      |        — |         75 | '5002704'(1084) | '5003702'(215) | '50 |
+|    8 | ANO DO FATO                      | int64      |        — |          1 | '2026'(2900)                           |
+|    9 | DATA DO FATO                     | object     |        0 |         19 | '25/01/2026'(306) | '01/02/2026'(246)  |
+|   10 | HORA DO FATO                     | object     |        0 |        436 | '20:00:00'(91) | '08:00:00'(91) | '19: |
+|   11 | ENVOLVIMENTO                     | object     |        0 |          2 | 'VÍTIMA'(1483) | 'AUTOR'(1417)         |
+|   12 | SEXO                             | object     |        0 |          3 | 'FEMININO'(1575) | 'MASCULINO'(1324) | |
+|   13 | NACIONALIDADE                    | object     |        0 |          4 | 'BRASILEIRO(A)'(2729) | 'N/I'(111) | ' |
+|   14 | ESCOLARIDADE                     | object     |        0 |         10 | 'FUNDAMENTAL INCOMP'(902) | 'MEDIO COM |
+|   15 | COR/RAÇA                         | object     |        0 |          6 | 'PARDA'(1700) | 'BRANCA'(688) | 'N/I'( |
+|   16 | IDADE NO FATO                    | float64    |        — |         81 | '30.0'(134) | '28.0'(122) | '24.0'(118 |
++------+----------------------------------+------------+----------+------------+----------------------------------------+
+
+  QUALIDADE DOS DADOS:
+    Registros totais  : 2.900
+    Registros duplicad: 12
+    Taxa duplicação   : 0.41%
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  4. ESTRUTURA DE ARQUIVOS GERADOS
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  c:\Users\SQL-Data\Desktop\3201.000.518-2 Tópicos Interdisciplinares III\MV_SIGO_SEJUSP MS TJMS/
+  ├── [XLS originais]
+  │   ├── ATENDIMENTOS_EMERGENCIA_MS_2026-05-18.xls (7.6 MB)
+  │   ├── MEDIDAS_PROTETIVAS_URGENCIA_MPU_MS_2026-05-18.xls (291.5 KB)
+  │   ├── MULHERES_VITIMAS_HOMICIDIOS_MS_2026-05-18.xls (723.4 KB)
+  │   ├── VITIMAS_ESTUPRO_MS_2026-05-18.xls (15.4 MB)
+  │   ├── VITIMAS_FEMINICIDIOS_MS_2026-05-18.xls (412.2 KB)
+  │   ├── VITIMAS_VIOLENCIA_DOMESTICA_MS_2026-05-18.xls (1.0 MB)
+  │
+  ├── [CSVs gerados]
+  │   ├── atendimentos_emergencia.csv (4.6 MB)
+  │   ├── medidas_protetivas_urgencia.csv (186.8 KB)
+  │   ├── mulheres_vitimas_homicidios.csv (498.0 KB)
+  │   ├── vitimas_estupro.csv (9.9 MB)
+  │   ├── vitimas_feminicidios.csv (281.5 KB)
+  │   ├── vitimas_violencia_domestica.csv (670.0 KB)
+  │
+  └── relatorio_conversao_xls_csv.txt  ← este relatório
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  5. ERROS
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Nenhum erro registrado. Todas as conversões foram bem-sucedidas.
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  6. PRÓXIMOS PASSOS — ANÁLISE DE DADOS EM PYTHON
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Os arquivos CSV gerados estão prontos para análise. Exemplo de carga:
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+  │  import pandas as pd                                            │
+  │  import glob, os                                                │
+  │                                                                 │
+  │  # Carregar todos os CSVs gerados                               │
+  │  pasta = os.path.dirname(os.path.abspath(__file__))             │
+  │  csvs = glob.glob(os.path.join(pasta, '*.csv'))                 │
+  │  dfs  = {os.path.basename(f): pd.read_csv(f, sep=';',           │
+  │          encoding='utf-8-sig') for f in csvs}                   │
+  │                                                                 │
+  │  # Exemplo: ocorrências por município (atendimentos emergência) │
+  │  df = dfs['atendimentos_emergencia.csv']                        │
+  │  print(df.groupby('MUNICÍPIO')['FATO'].count().sort_values())   │
+  └─────────────────────────────────────────────────────────────────────────────────────────────┘
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  Fim do relatório — 23/05/2026 11:14:27
+  SEJUSP-MS / PJMS — Monitor da Violência contra a Mulher — MS/Brasil
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
