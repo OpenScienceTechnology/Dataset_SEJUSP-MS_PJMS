@@ -317,18 +317,18 @@
   Os arquivos CSV gerados estão prontos para análise. Exemplo de carga:
 
   ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-  │  import pandas as pd                                            │
-  │  import glob, os                                                │
-  │                                                                 │
-  │  # Carregar todos os CSVs gerados                               │
-  │  pasta = os.path.dirname(os.path.abspath(__file__))             │
-  │  csvs = glob.glob(os.path.join(pasta, '*.csv'))                 │
-  │  dfs  = {os.path.basename(f): pd.read_csv(f, sep=';',           │
-  │          encoding='utf-8-sig') for f in csvs}                   │
-  │                                                                 │
-  │  # Exemplo: ocorrências por município (atendimentos emergência) │
-  │  df = dfs['atendimentos_emergencia.csv']                        │
-  │  print(df.groupby('MUNICÍPIO')['FATO'].count().sort_values())   │
+  │  import pandas as pd                                                                        │
+  │  import glob, os                                                                            │
+  │                                                                                             │
+  │  # Carregar todos os CSVs gerados                                                           │
+  │  pasta = os.path.dirname(os.path.abspath(__file__))                                         │
+  │  csvs = glob.glob(os.path.join(pasta, '*.csv'))                                             │
+  │  dfs  = {os.path.basename(f): pd.read_csv(f, sep=';',                                       │
+  │          encoding='utf-8-sig') for f in csvs}                                               │
+  │                                                                                             │
+  │  # Exemplo: ocorrências por município (atendimentos emergência)                             │
+  │  df = dfs['atendimentos_emergencia.csv']                                                    │
+  │  print(df.groupby('MUNICÍPIO')['FATO'].count().sort_values())                               │
   └─────────────────────────────────────────────────────────────────────────────────────────────┘
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
